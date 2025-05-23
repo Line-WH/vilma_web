@@ -1,0 +1,108 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$link-decoration: none;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+$custom-colors: (
+	"ash": #262626,
+	"grey": #D5D3CC,
+	"snow": #F9F7F2,
+	"ice": #B4F1EC,
+	"phtalo": #687D31,
+	"space": #40676B,
+	"moonstone": #6FA98B
+);
+
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "bootstrapComponents";
+
+// 5. Du kan lave styling her...
+
+//utility classes
+
+.display {
+	font-family: "JetBrains Mono", sans-serif;
+}
+
+.subheading {
+	font-family: "Jost", sans-serif;
+	font-weight: 400;
+}
+
+.mellemrubrik {
+	font-family:"JetBrains Mono", sans-serif;
+	font-weight: 400;
+}
+
+.bodytekst {
+	font-family: "Jost", sans-serif;
+}
+
+.btn {
+	background-color: #B4F1EC;
+	color: #262626;
+	font-family: "Jost", sans-serif;
+	border-radius: 4px;
+	padding: 1rem;
+}
+
+.btn:hover {
+	background-color: #40676B;
+	color: #F9F7F2;
+}
+
+.main-nav {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	background-color: #262626;
+}
+
+.nav-link{
+	color: #f9f7f2;
+	text-decoration: none;
+}
+
+.main-nav .nav-link:hover{
+	color: #6FA98B;
+}
+
+@media (min-width: 1024px) {
+	.main-nav {
+		background-color: transparent;
+	}
+}
+
+
+//hero video
+
+.hero {
+	height: 50vh;
+	overflow: hidden;
+}
+
+.hero video{
+	z-index: 1;
+}
+
+.video-gradient {
+	z-index: 2;
+	background: linear-gradient(to right, rgba(0,0,0.3,0.6), rgba(0, 0, 0, 0));
+}
+
+.hero-content {
+	z-index: 3
+}
+
+
+
