@@ -92,6 +92,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	max-width: 200px;
 }
 
+@media (max-width: 1024px) {
+	.page-footer {
+		margin-bottom: 2rem;
+	}
+}
 
 //hero video
 
