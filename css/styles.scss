@@ -83,6 +83,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	}
 }
 
+.page-footer {
+	z-index: -100;
+}
 
 //hero video
 
