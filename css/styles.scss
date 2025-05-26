@@ -87,6 +87,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	z-index: -100;
 }
 
+.footer-logo {
+	max-height: 200px;
+	max-width: 200px;
+}
+
+
 //hero video
 
 .hero {
