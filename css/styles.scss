@@ -126,6 +126,26 @@ body {
 	background: linear-gradient(to right, rgba(0,0,0.3,0.6), rgba(0, 0, 0, 0));
 }
 
+.hero-gradient {
+	background: linear-gradient(-45deg, #687D31, #40676B, #6FA98B, #B4F1EC); /* Gradient */
+	background-size: 400% 400%; /* Enlarged size for smooth animation */
+	animation: gradientBG 10s ease infinite; /* Gradient animation */
+	height: calc(100vh - 4rem);
+	width: calc(100vw - 4rem);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2.5rem;
+
+}
+
+@keyframes gradientBG {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+
 .hero-content {
 	z-index: 3
 }
