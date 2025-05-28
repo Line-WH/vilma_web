@@ -63,7 +63,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	z-index: 1000;
+	z-index: 100;
 	background-color: #262626;
 
 }
@@ -134,7 +134,17 @@ body {
 	border-radius: 4px;
 }
 
-.video-teaser {
+.logo {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.logo {
+		display: block;
+		height: 100px;
+		width: 100px;
+		z-index: 1000;
+	}
 }
 
 
